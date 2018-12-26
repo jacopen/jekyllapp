@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: jekyllapp
-        image: jacopen/jekyllapp
+        image: jacopen/jekyllapp:TAG
         resources:
           requests:
             cpu: 100m
