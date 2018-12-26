@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jekyllapp
+  labels:
+    app: jekyllapp
+spec:
+  # type: NodePort 
+  
+  type: LoadBalancer
+  ports:
+  - port: 8080
+  selector:
+    app: jekyllapp
