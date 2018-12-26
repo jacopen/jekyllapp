@@ -1,20 +1,20 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: jekyllapp
+  name: jekyllapp-ENVIRONMENT
 spec:
   selector:
     matchLabels:
-      app: jekyllapp
+      app: jekyllapp-ENVIRONMENT
   replicas: 3
   template:
     metadata:
       labels:
-        app: jekyllapp
+        app: jekyllapp-ENVIRONMENT
     spec:
       containers:
-      - name: jekyllapp
-        image: jacopen/jekyllapp
+      - name: jekyllapp-ENVIRONMENT
+        image: jacopen/jekyllapp:TAG
         resources:
           requests:
             cpu: 100m
