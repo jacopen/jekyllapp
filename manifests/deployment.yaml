@@ -21,6 +21,8 @@ spec:
             memory: 500Mi
         env:
         - name: ENV
-          value: production
+          value: ENVIRONMENT
+        - name: DB_HOST
+          value: ENVIRONMENT
         ports:
         - containerPort: 8080
